@@ -10,7 +10,6 @@ app = Flask(__name__)
 def get_data():
     return app.send_static_file("data.json")
 
-# Replace the existing home function with the one below
 @app.route("/")
 def home():
     return render_template("home.html")
